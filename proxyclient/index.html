@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Proxy</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<link href="./assets/css/style.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="main-wrapper">
+		<div class="wrapper">
+			<div class="extension-main-wrapper">
+				<div class="extension-wrapper">
+					<div class="extension-errors-wrapper"></div>
+					<custom-page data-route="#startPage">
+						<div slot="header">
+							
+						</div>
+
+						<div slot="content">
+							<div class="start-page-content-wrapper">
+								<div class="start-page-title-wrapper">
+									<h1 class="start-page-title">ProxyClient</h1>
+								</div>
+								<div class="start-page-content">
+									<p>Ваш список прокси пока ещё пуст.<br> Добавьте прокси для начала работы.</p>
+								</div>
+								<div class="start-page-page-action-wrapper">
+									<a href="#settingsPage" class="router-link button button-primary">Добавить прокси</a>
+								</div>
+							</div>
+						</div>
+
+						<div slot="footer">
+							<ul class="page-footer-menu">
+								<li><a href="#howToPage" class="router-link">Как это работает</a></li>
+								<li><a href="#settingsPage" class="router-link">Настройки</a></li>
+							</ul>
+						</div>
+					</custom-page>
+
+					<custom-page data-route="#howToPage">
+						<div slot="header">
+							<div class="page-back-button-wrapper">
+								<a href="#startPage" class="page-back-button router-link">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 288 480 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-370.7 0 73.4-73.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-128 128z"/></svg>
+									<span>назад</span>
+								</a>
+							</div>
+						</div>
+
+						<div slot="content">
+							<div class="how-to-page-content">
+								<div class="how-to-page-description-wrapper">
+									<div class="how-to-page-description-title-wrapper">
+										<h2 class="how-to-page-description-title">Как это работает</h2>
+									</div>
+									<div class="how-to-page-description">
+										<p>ProxyClient - это проксий клиент, который позволяет вам хранить ваши прокси. Сам по себе клиент не предоставляет прокси сервера. Вам необходимо самостоятельно найти или создать прокси сервер, а затем добавить его в спиоск.</p>
+										<p>Далее вы сможете использовать выбранный из списка прокси. Убедитесь, что другие расширения для прокси/vpn отключены в вашем браузере.</p>
+									</div>
+									<div class="how-to-page-action-wrapper">
+										<a href="#settingsPage" class="router-link button button-primary">Добавить прокси</a>
+									</div>
+								</div>
+
+								<div class="how-to-page-faq-wrapper">
+									<div class="how-to-page-faq-title-wrapper">
+										<h2 class="how-to-page-faq-title">FAQ</h2>
+									</div>
+									<div class="how-to-page-faq-content-wrapper">
+										<div class="how-to-page-faq-content">
+											<div class="accordions-main-wrapper">
+												<div class="accordions-wrapper">
+													<custom-accordion>
+														<span slot="accordion-title">Где найти прокси сервер?</span>
+														<div slot="accordion-content">
+															<h4>Поиск прокси сервера</h4>
+															<p>Вы можете найти прокси сервер в интернете. Существуют сайты аггрегаторы, на которых размещены данные для подключения.</p>
+														</div>
+													</custom-accordion>
+
+													<custom-accordion>
+														<span slot="accordion-title">Какой тип прокси мне нужен (SOCKS, HTTP)?</span>
+														<div slot="accordion-content">
+															<p>HTTP прокси оптимизирован для веб-трафика, в то время как SOCKS прокси универсален и подходит для любого типа интернет-соединения.</p>
+														</div>
+													</custom-accordion>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div slot="footer">
+							<ul class="page-footer-menu">
+								<li><a href="#howToPage" class="router-link">Как это работает</a></li>
+								<li><a href="#settingsPage" class="router-link">Настройки</a></li>
+							</ul>
+						</div>
+					</custom-page>
+
+					<custom-page data-route="#settingsPage">
+						<div slot="header">
+							<div class="page-back-button-wrapper">
+								<a href="#startPage" class="page-back-button router-link">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 288 480 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-370.7 0 73.4-73.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-128 128z"/></svg>
+									<span>назад</span>
+								</a>
+							</div>
+						</div>
+
+						<div slot="content">
+							<div class="settings-page-content">
+								<div class="settings-page-description-wrapper">
+									<h2 class="settings-page-description-title">Настройки</h2>
+								</div>
+
+								<div class="settings-page-settings-wrapper">
+									<div class="settings-page-settings">
+										<div class="settings-page-setting-wrapper">
+											<div class="settings-page-setting">
+												<div class="settings-page-setting-title-wrapper">
+													<h3 class="settings-page-setting-title">Список прокси</h3>
+												</div>
+												<div class="settings-page-setting-content-wrapper">
+													<div class="settings-page-setting-content">
+														<custom-proxy-settings></custom-proxy-settings>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div slot="footer">
+							<ul class="page-footer-menu">
+								<li><a href="#howToPage" class="router-link">Как это работает</a></li>
+								<li><a href="#settingsPage" class="router-link">Настройки</a></li>
+							</ul>
+						</div>
+					</custom-page>
+
+					<custom-page data-route="#proxyPage">
+						<div slot="header">
+							
+						</div>
+
+						<div slot="content">
+							<div class="proxy-page-content-wrapper">
+								<div class="proxy-page-proxy-list-wrapper">
+									<custom-proxy-list></custom-proxy-list>
+								</div>
+								<div class="proxy-page-connection-main-wrapper">
+									<custom-connection-button></custom-connection-button>
+								</div>
+							</div>
+						</div>
+
+						<div slot="footer">
+							<ul class="page-footer-menu">
+								<li><a href="#howToPage" class="router-link">Как это работает</a></li>
+								<li><a href="#settingsPage" class="router-link">Настройки</a></li>
+							</ul>
+						</div>
+					</custom-page>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="module" src="./assets/js/app.js" defer></script>
+</body>
+</html>
